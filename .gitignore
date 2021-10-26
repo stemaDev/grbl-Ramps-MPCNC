@@ -6,6 +6,6 @@
 *.d
 .grbl*
 .vscode
-platformio.ini
 
 README.md
+/.pio

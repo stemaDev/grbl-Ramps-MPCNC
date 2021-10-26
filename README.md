@@ -1,7 +1,11 @@
 Modified for MPCNC
+
 -Dual motor for X and Y axis
+
 -Dual endstop for auto-squaring X and Y axis
+
 -Endstop types as NC (normally closed, safer)
+
 
 changes based on this description: https://alexpgh.github.io/foss-toolchain-mpcnc/zoom_1/
 

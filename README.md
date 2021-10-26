@@ -2,6 +2,7 @@ Modified grbl-Mega-5X for MPCNC
 - Dual motor for X and Y axis
 - Dual endstop for auto-squaring X and Y axis
 - Endstop types as NC (normally closed, safer)
+- PlatformIO project to use in VSCode
 
 
 changes based on this description: https://alexpgh.github.io/foss-toolchain-mpcnc/zoom_1/

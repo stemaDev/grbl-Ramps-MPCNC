@@ -3,6 +3,8 @@ Modified for MPCNC
 -Dual endstop for auto-squaring X and Y axis
 -Endstop types as NC (normally closed, safer)
 
+changes based on this description: https://alexpgh.github.io/foss-toolchain-mpcnc/zoom_1/
+
 ***
 
 ![GitHub Logo](https://github.com/fra589/grbl-Mega-5X/blob/edge/doc/images/Mega-5X-logo.svg)

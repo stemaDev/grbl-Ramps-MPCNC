@@ -46,21 +46,21 @@
 // Define step pulse output pins.
 
 #define STEP_PORT_0 D54_A0_PORT
-#define STEP_BIT_0 D54_A0_BIT // X Step
+#define STEP_BIT_0 D54_A0_BIT // X1 Step
 
 #define STEP_PORT_1 D60_A6_PORT
-#define STEP_BIT_1 D60_A6_BIT // Y Step
+#define STEP_BIT_1 D60_A6_BIT // Y1 Step
 
 #define STEP_PORT_2 D46_PORT
 #define STEP_BIT_2 D46_BIT // Z Step
 
 #if N_AXIS > 3
 #define STEP_PORT_3 D26_PORT
-#define STEP_BIT_3 D26_BIT // Axis number 4 Step (Ramps E0)
+#define STEP_BIT_3 D26_BIT // X2 Step (Ramps E0)
 #endif
 #if N_AXIS > 4
-#define STEP_PORT_4 D36_PORT // Axis number 5
-#define STEP_BIT_4 D36_BIT   // Axis number 5 Step (Ramps E1)
+#define STEP_PORT_4 D36_PORT
+#define STEP_BIT_4 D36_BIT // Y2 Step (Ramps E1)
 #endif
 #if N_AXIS > 5
 #define STEP_PORT_5 D49_PORT
@@ -76,22 +76,22 @@
 
 // Define step direction output pins.
 #define DIRECTION_PORT_0 D55_A1_PORT
-#define DIRECTION_BIT_0 D55_A1_BIT // X Dir
+#define DIRECTION_BIT_0 D55_A1_BIT // X1 Dir
 
 #define DIRECTION_PORT_1 D61_A7_PORT
-#define DIRECTION_BIT_1 D61_A7_BIT // Y Dir
+#define DIRECTION_BIT_1 D61_A7_BIT // Y1 Dir
 
 #define DIRECTION_PORT_2 D48_PORT
 #define DIRECTION_BIT_2 D48_BIT // Z Dir
 
 #if N_AXIS > 3
 #define DIRECTION_PORT_3 D28_PORT
-#define DIRECTION_BIT_3 D28_BIT // Axis number 4 Step (Ramps E0)
+#define DIRECTION_BIT_3 D28_BIT // X2 (Ramps E0)
 
 #endif
 #if N_AXIS > 4
 #define DIRECTION_PORT_4 D34_PORT
-#define DIRECTION_BIT_4 D34_BIT // Axis number 5 Step (Ramps E1)
+#define DIRECTION_BIT_4 D34_BIT // Y2 (Ramps E1)
 
 #endif
 #if N_AXIS > 5
@@ -109,21 +109,21 @@
 
 // Define stepper driver enable/disable output pin.
 #define STEPPER_DISABLE_PORT_0 D38_PORT
-#define STEPPER_DISABLE_BIT_0 D38_BIT // X Enable
+#define STEPPER_DISABLE_BIT_0 D38_BIT // X1 Enable
 
 #define STEPPER_DISABLE_PORT_1 D56_A2_PORT
-#define STEPPER_DISABLE_BIT_1 D56_A2_BIT // Y Enable
+#define STEPPER_DISABLE_BIT_1 D56_A2_BIT // Y1 Enable
 
 #define STEPPER_DISABLE_PORT_2 D62_A8_PORT
 #define STEPPER_DISABLE_BIT_2 D62_A8_BIT // Z Enable
 
 #if N_AXIS > 3
 #define STEPPER_DISABLE_PORT_3 D24_PORT
-#define STEPPER_DISABLE_BIT_3 D24_BIT // Axis number 4 Step (Ramps E0)
+#define STEPPER_DISABLE_BIT_3 D24_BIT // X2 (Ramps E0)
 #endif
 #if N_AXIS > 4
 #define STEPPER_DISABLE_PORT_4 D30_PORT
-#define STEPPER_DISABLE_BIT_4 D30_BIT // Axis number 5 Step (Ramps E1)
+#define STEPPER_DISABLE_BIT_4 D30_BIT // Y2 (Ramps E1)
 #endif
 #if N_AXIS > 5
 #define STEPPER_DISABLE_PORT_5 D53_PORT
@@ -137,36 +137,36 @@
 
 // Define homing/hard limit switch input pins and limit interrupt vectors.
 #define MIN_LIMIT_PORT_0 D3_PORT
-#define MIN_LIMIT_BIT_0 D3_BIT // X Limit Min
+#define MIN_LIMIT_BIT_0 D3_BIT // X1 Limit Min
 
-#define MAX_LIMIT_PORT_0 D2_PORT
-#define MAX_LIMIT_BIT_0 D2_BIT // X Limit Max
+#define MAX_LIMIT_PORT_0 D42_PORT
+#define MAX_LIMIT_BIT_0 D42_BIT // X1 Limit Max
 
 #define MIN_LIMIT_PORT_1 D14_PORT
-#define MIN_LIMIT_BIT_1 D14_BIT // Y Limit Min
+#define MIN_LIMIT_BIT_1 D14_BIT // Y1 Limit Min
 
-#define MAX_LIMIT_PORT_1 D15_PORT
-#define MAX_LIMIT_BIT_1 D15_BIT // Y Limit Max
+#define MAX_LIMIT_PORT_1 D44_PORT
+#define MAX_LIMIT_BIT_1 D44_BIT // Y1 Limit Max
 
-#define MIN_LIMIT_PORT_2 D18_PORT
-#define MIN_LIMIT_BIT_2 D18_BIT // Z Limit Min
+#define MIN_LIMIT_PORT_2 D69_PORT
+#define MIN_LIMIT_BIT_2 D69_BIT // Z Limit Min
 
 #define MAX_LIMIT_PORT_2 D19_PORT
 #define MAX_LIMIT_BIT_2 D19_BIT // Z Limit Max
 
 #if N_AXIS > 3
-#define MIN_LIMIT_PORT_3 D42_PORT
-#define MIN_LIMIT_BIT_3 D42_BIT // Axis number 4 Limit Min
+#define MIN_LIMIT_PORT_3 D2_PORT
+#define MIN_LIMIT_BIT_3 D2_BIT // X2 Limit Min
 
 #define MAX_LIMIT_PORT_3 D40_PORT
-#define MAX_LIMIT_BIT_3 D40_BIT // Axis number 4 Limit Max
+#define MAX_LIMIT_BIT_3 D40_BIT // X2 Limit Max
 #endif
 #if N_AXIS > 4
-#define MIN_LIMIT_PORT_4 D44_PORT
-#define MIN_LIMIT_BIT_4 D44_BIT // Axis number 5 Limit Min
+#define MIN_LIMIT_PORT_4 D15_PORT
+#define MIN_LIMIT_BIT_4 D15_BIT // Y2 Limit Min
 
 #define MAX_LIMIT_PORT_4 D59_A5_PORT
-#define MAX_LIMIT_BIT_4 D59_A5_BIT // Axis number 5 Limit Max
+#define MAX_LIMIT_BIT_4 D59_A5_BIT // Y2 Limit Max
 #endif
 #if N_AXIS > 5
 #define MIN_LIMIT_PORT_5 D57_A3_PORT
@@ -232,7 +232,7 @@
 #define CONTROL_DDR DDRK
 #define CONTROL_PIN PINK
 #define CONTROL_PORT PORTK
-#define CONTROL_RESET_BIT 1       // Pin A9 - RAMPS Aux 2 Port
+#define CONTROL_RESET_BIT 1       // Pin A9  - RAMPS Aux 2 Port
 #define CONTROL_FEED_HOLD_BIT 2   // Pin A10 - RAMPS Aux 2 Port
 #define CONTROL_CYCLE_START_BIT 3 // Pin A11 - RAMPS Aux 2 Port
 #define CONTROL_SAFETY_DOOR_BIT 4 // Pin A12 - RAMPS Aux 2 Port
@@ -242,10 +242,10 @@
 #define CONTROL_MASK ((1 << CONTROL_RESET_BIT) | (1 << CONTROL_FEED_HOLD_BIT) | (1 << CONTROL_CYCLE_START_BIT) | (1 << CONTROL_SAFETY_DOOR_BIT))
 
 // Define probe switch input pin.
-#define PROBE_DDR DDRK
-#define PROBE_PIN PINK
-#define PROBE_PORT PORTK
-#define PROBE_BIT 7 // MEGA2560 Analog Pin 15
+#define PROBE_DDR DDRD
+#define PROBE_PIN PIND
+#define PROBE_PORT PORTD
+#define PROBE_BIT 3 // MEGA2560 D18 (PORT: D, BIT: 3)
 #define PROBE_MASK (1 << PROBE_BIT)
 
 //-------------------------------------------------------------------------------------------------------

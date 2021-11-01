@@ -148,8 +148,8 @@
 #define MAX_LIMIT_PORT_1 D44_PORT
 #define MAX_LIMIT_BIT_1 D44_BIT // Y1 Limit Max
 
-#define MIN_LIMIT_PORT_2 D69_PORT
-#define MIN_LIMIT_BIT_2 D69_BIT // Z Limit Min
+#define MIN_LIMIT_PORT_2 D69_A15_PORT
+#define MIN_LIMIT_BIT_2 D69_A15_BIT // Z Limit Min
 
 #define MAX_LIMIT_PORT_2 D19_PORT
 #define MAX_LIMIT_BIT_2 D19_BIT // Z Limit Max
